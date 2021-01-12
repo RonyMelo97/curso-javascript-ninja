@@ -172,7 +172,7 @@ pessoa.andando
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-pessoa.caminhaouQuantosMetros
+pessoa.caminhouQuantosMetros
 //45
 
 /*
