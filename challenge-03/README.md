@@ -24,7 +24,7 @@ var pessoa = {
   altura:1.83,
   peso:78,
   andando:false,
-  caminhouQuantosMetros 0,
+  caminhouQuantosMetros:0,
   }
 
 /*
@@ -47,7 +47,7 @@ valor dessa propriedade a quantidade passada por parâmetro;
 booleano que representa "verdadeiro";
 */
 pessoa.andar = function(x){
-    pessoa.caminhaouQuantosMetros += x;
+    pessoa.caminhouQuantosMetros += x;
     pessoa.andando = true; 
     return pessoa.nome + ' Andou ' + x + ' Metros';
 }
