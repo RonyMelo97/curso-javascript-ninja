@@ -154,7 +154,8 @@ pessoa.andar(20)
 A pessoa ainda está andando? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.parar()
+pessoa.andando()
+//true
 
 /*
 Se a pessoa ainda está andando, faça-a parar.
