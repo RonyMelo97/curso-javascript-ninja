@@ -68,10 +68,10 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function verifique(x, y ,z){
-    if (y === undefined && z === undefined){
+    if (x !== undefined && y === undefined && z === undefined){
         return x
     }
-    else if(z === undefined){
+    else if(x !== undefined && y !== undefined && z === undefined){
         return x + y;
     }
     else if(x !== undefined && y !== undefined && z !== undefined){
@@ -88,6 +88,7 @@ function verifique(x, y ,z){
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
+verifique() //false
 verifique(1) //1
 verifique(3,6) //9
 verifique(5,3,2) // 4
