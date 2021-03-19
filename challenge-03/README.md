@@ -211,10 +211,8 @@ pessoa.apresentacao = function(){
     var sexo = 'o'
     if(pessoa.sexo === 'feminino' || pessoa.sexo === 'Feminino' ){
        var sexo = 'a'
-    }else{
-        return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros
     }
-   
+    return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros
 }
 
 
