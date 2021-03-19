@@ -209,13 +209,21 @@ correta, de acordo com os dados inseridos no objeto.
 
 pessoa.apresentacao = function(){
     var sexo = 'o'
+    var idade = 'anos'
+    var metros = 'metros'
     if(pessoa.sexo === 'feminino' || pessoa.sexo === 'Feminino' ){
        var sexo = 'a'
     }
-    return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros
+    if(pessoa.idade == 1){
+        var idade = 'ano'
+    }
+    if(pessoa.caminhouQuantosMetros == 1){
+        var metros = 'metro'
+    }
+    return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' ' + idade + ' ' + pessoa.altura + ' de altura , meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros + ' '  + metros 
 }
 
 
 // Agora, apresente-se ;)
-?
-```
+
+"Olá, eu sou o Rony Melo, tenho 23 anos 1.78 de altura , meu peso é 78kg e, só hoje, eu ja caminhei 1 metro"
