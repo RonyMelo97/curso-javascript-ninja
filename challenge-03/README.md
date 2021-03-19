@@ -208,11 +208,15 @@ correta, de acordo com os dados inseridos no objeto.
 */
 
 pessoa.apresentacao = function(){
-    if (pessoa.sexo = 'feminino' || pessoa.sexo == 'Feminino' ){
-        return 'Olá, eu sou a ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros
+    var sexo = 'o'
+    if(pessoa.sexo === 'feminino' || pessoa.sexo === 'Feminino' ){
+       var sexo = 'a'
+    }else{
+        return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso +  'kg e, só hoje, eu ja caminhei ' + pessoa.caminhouQuantosMetros
     }
-    
+   
 }
+
 
 // Agora, apresente-se ;)
 ?
