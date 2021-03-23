@@ -129,15 +129,14 @@ carro.AddPessoas = function(pessoas) {
     var vagasDisponivels = carro.assentos - carro.quantidadePessoas; 
     var plural = vagasDisponivels === 1? 'pessoa' : 'pessoas'; 
     
-    if(carro.quantidadePessoas >= 5){
+    if(carro.quantidadePessoas === carro.assentos){
          return 'O Carro está lotado'               
     }
     if(pessoas > vagasDisponivels){
         return 'Só cabem mais ' + vagasDisponivels + ' ' + plural + ' no carro'
-    } else {
-        carro.quantidadePessoas += pessoas
-    return 'Ja temos ' + carro.quantidadePessoas + ' no carro.'
     }
+    carro.quantidadePessoas += pessoas
+    return 'Ja temos ' + carro.quantidadePessoas + ' no carro.'
 }
 
 /*
