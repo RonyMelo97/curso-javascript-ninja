@@ -41,13 +41,19 @@ var fiveValue = ['Um',1,true,false,null];
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+
+console.log(getArr(fiveValue,[0]))
+console.log(getArr(fiveValue,[1]))
+console.log(getArr(fiveValue,[2]))
+console.log(getArr(fiveValue,[3]))
+console.log(getArr(fiveValue,[4]))
+
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
 livro. Dentro dessa função, declare uma variável que recebe um objeto com as
 seguintes características:
-- esse objeto irá receber 3 propriedades, que serão nomes de livros;
+- esse oedbjeto irá receber 3 propriedades, que serão nomes de livros;
 - cada uma dessas propriedades será um novo objeto, que terá outras 3
 propriedades:
     - `quantidadePaginas` - Number (quantidade de páginas)
@@ -57,7 +63,32 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+
+function book(bookName){
+    var allBooks = {
+        tomFord:{
+            quantidadeDePaginas: 298,
+            autor: 'Jack',
+            editora: 'BrEditor'
+            },
+
+        umbrellaAcademy:{
+            quantidadeDePaginas: 782,
+            autor: 'Rodrigo',
+            editora: 'Castor'
+            },
+
+        primoRico:{
+            quantidadeDePaginas: 102,
+            autor: 'Daniel',
+            editora: 'Primer'
+            }
+    };
+    if (bookName === undefined){
+        return allBooks
+    }
+        return allBooks.bookName
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
