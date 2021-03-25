@@ -84,16 +84,14 @@ function book(bookName){
             editora: 'Primer'
             }
     };
-    if (bookName === undefined){
-        return allBooks
-    }
-        return allBooks.bookName
+   return bookName === undefined ? allBooks : allBooks[bookName];  
 }
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+console.log( book() )
+//{tomFord: {…}, umbrellaAcademy: {…}, primoRico: {…}}
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
