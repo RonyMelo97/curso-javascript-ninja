@@ -99,7 +99,7 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-console.log('O livro ' + 'tomFord' + ' tem ' + book('tomFord').quantidadeDePaginas + ' páginas!')
+console.log( 'O livro ' + bookNameG + ' tem ' + book( bookNameG ).quantidadeDePaginas + ' páginas!' )
 //O livro tomFord tem 298 páginas!
 
 /*
@@ -107,7 +107,7 @@ Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-console.log('O autor do livro ' + 'tomFord' + ' é ' + book('tomFord').autor)
+console.log( 'O autor do livro ' + bookNameG + ' é ' + book( bookNameG ).autor )
 //O autor do livro tomFord é Jack
 
 /*
@@ -116,6 +116,6 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-console.log('O livro ' + 'primoRico' + ' foi publicado pela editora ' + book('primoRico').editora + '.')
+console.log( 'O livro ' + bookNameG + ' tem ' + book( bookNameG ).quantidadeDePaginas + ' páginas!' )
 //O livro primoRico foi publicado pela editora Primer.
 
