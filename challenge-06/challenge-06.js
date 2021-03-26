@@ -4,7 +4,10 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-// ?
+
+var championship = 'Paulista';
+console.log(championship)
+//Paulista
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -32,19 +35,47 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
 
+var championship = 'Paulista';
+//console.log(championship)
+
+
+var teams = ['','Corinthians','São Paulo','Santos','Palmeiras','Bota Fogo']
+
+function showTeamPosition(posicao){
+    return posicao < 6 ? 'O time que está em ' + posicao +  'º lugar é o ' + teams[posicao] +  '.' : 'Não temos a informação do time que está nessa posição.'
+}
+
+//
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-// ?
+showTeamPosition(1)
+//"O time que está em 1º lugar é o Corinthians."
+
+showTeamPosition(2)
+//"O time que está em 2º lugar é o São Paulo."
+
+showTeamPosition(3)
+//"O time que está em 3º lugar é o Santos."
+
+showTeamPosition(4)
+//"O time que está em 4º lugar é o Palmeiras."
+
+showTeamPosition(6)
+//"Não temos a informação do time que está nessa posição."
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+
+var lopping = 20;
+while(lopping < 30){
+    lopping++
+    console.log(lopping)
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -58,7 +89,27 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+
+function convertToHex(cor){ 
+ if(cor === 'red' ){
+    return '#B22222'
+}else if(cor === 'blue' ){
+    return '#0000FF'
+    }
+else if(cor === 'green' ){
+    return '#008000'
+    }
+else if(cor === 'yellow' ){
+    return '#FFFF00'
+    }
+else if(cor === 'purple' ){
+    return '#A020F0'
+    }
+else if(cor === 'orange' ){
+    return '#FFA500'
+    }
+return 'Não temos o equivalente hexadecimal para ' +cor;
+}
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
