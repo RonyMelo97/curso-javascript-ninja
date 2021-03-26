@@ -40,10 +40,10 @@ var championship = 'Paulista';
 //console.log(championship)
 
 
-var teams = ['','Corinthians','São Paulo','Santos','Palmeiras','Bota Fogo']
+var teams = ['Corinthians','São Paulo','Santos','Palmeiras','Bota Fogo']
 
 function showTeamPosition(posicao){
-    return posicao < 6 ? 'O time que está em ' + posicao +  'º lugar é o ' + teams[posicao] +  '.' : 'Não temos a informação do time que está nessa posição.'
+    return posicao < 6 ? 'O time que está em ' + posicao +  'º lugar é o ' + teams[posicao -1] +  '.' : 'Não temos a informação do time que está nessa posição.'
 }
 
 //
@@ -72,9 +72,8 @@ repetição "while".
 */
 
 var lopping = 20;
-while(lopping < 30){
-    lopping++
-    console.log(lopping)
+while(lopping <= 30){
+    console.log( lopping++ )
 }
 
 /*
@@ -90,25 +89,32 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     "Não temos o equivalente hexadecimal para [COR]."
 */
 
+var cores = {
+    red:'#B22222',
+    blue:'#0000FF',
+    green:'#008000',
+    yellow:'#FFFF00',
+    orange:'#FFA500'
+}
+
 function convertToHex(cor){ 
- if(cor === 'red' ){
-    return '#B22222'
-}else if(cor === 'blue' ){
-    return '#0000FF'
+
+    switch('cor'){
+            case 'red': // se cor igual a cores
+            case 'blue':
+            case 'yellow':
+            case 'green':
+            case 'orange':
+                console.log( 'Os hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                break;
+                default: 
+                    console.log ( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                  //console.log ( 'Não temos o equivalente hexadecimal para ' + cor; )           
     }
-else if(cor === 'green' ){
-    return '#008000'
-    }
-else if(cor === 'yellow' ){
-    return '#FFFF00'
-    }
-else if(cor === 'purple' ){
-    return '#A020F0'
-    }
-else if(cor === 'orange' ){
-    return '#FFA500'
-    }
-return 'Não temos o equivalente hexadecimal para ' +cor;
+
+
+
+
 }
 
 /*
