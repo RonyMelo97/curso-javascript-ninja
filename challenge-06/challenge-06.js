@@ -97,27 +97,47 @@ var cores = {
     orange:'#FFA500'
 }
 
-function convertToHex(cor){ 
-
-    switch('cor'){
+switch(cor){
             case 'red': // se cor igual a cores
+                console.log( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                break;            
             case 'blue':
+                console.log( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                break;
             case 'yellow':
+                console.log( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                break;
             case 'green':
+                console.log( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                break;
             case 'orange':
-                console.log( 'Os hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
+                console.log( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
                 break;
                 default: 
-                    console.log ( 'O hexadecimal para a cor ' + cor + ' é ' + cores[cor] + '.' )
-                  //console.log ( 'Não temos o equivalente hexadecimal para ' + cor; )           
+                console.log ( 'Não temos o equivalente hexadecimal para ' + cor)           
     }
-
-
-
-
 }
+convertToHex('blue')
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-// ?
+convertToHex('red')
+convertToHex('blue')
+convertToHex('green')
+convertToHex('orange')
+convertToHex('yellow')
+convertToHex('pink')
+convertToHex('white')
+convertToHex('black')
+/*
+O hexadecimal para a cor red é #B22222.
+O hexadecimal para a cor blue é #0000FF.
+O hexadecimal para a cor green é #008000.
+O hexadecimal para a cor orange é #FFA500.
+O hexadecimal para a cor yellow é #FFFF00.
+Não temos o equivalente hexadecimal para pink
+Não temos o equivalente hexadecimal para white
+Não temos o equivalente hexadecimal para black
+*/
+
