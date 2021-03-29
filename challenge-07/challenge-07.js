@@ -52,14 +52,38 @@ Utilizando a estrutura de repetição `while`, mostre no console todos os númer
 pares entre 10 e 20, inclusive esses 2.
 */
 console.log( 'Números pares entre 10 e 20:' );
-// ?
+var num = 10;
 
+while (num <= 20){
+    num % 2 === 0?console.log(num):'';
+    num++ 
+}
+/*
+10
+12
+14
+16
+18
+20
+*/
 /*
 Na mesma ideia do exercício acima: mostre agora os números ímpares.
 */
 console.log( 'Números ímpares entre 10 e 20:' );
 // ?
+var num = 10;
 
+while (num <= 20){
+    num % 2 === 1?console.log(num):'';
+    num++ 
+}
+/*
+11
+13
+15
+17
+19
+*/
 /*
 Repita os mesmos exercícios feitos acima, mas agora usando o loop "for".
 Só vamos mudar o range:
@@ -67,7 +91,36 @@ Só vamos mudar o range:
 - No segundo "for", mostre os números ímpares entre 111 e 125, inclusive eles.
 */
 console.log( 'Números pares entre 100 e 120:' );
-// ?
 
+for (num = 100;num <= 120;num++){
+    num % 2 === 0?console.log(num):'0'
+}
+/*
+100
+102
+104
+106
+108
+110
+112
+114
+116
+118
+120
+*/
 console.log( 'Números ímpares entre 111 e 125:' );
-// ?
+
+for (num = 111;num <= 125;num++){
+    num % 2 === 1?console.log(num):'0'
+}
+
+/*
+111
+113
+115
+117
+119
+121
+123
+125
+*/
