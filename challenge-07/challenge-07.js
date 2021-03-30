@@ -19,7 +19,7 @@ Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
 
-addItem('4,5,6')
+console.log( addItem([4,5,6]) )
 //(6) ["rony", "23", ƒ, Array(3), {…}, "adicionou"]
 
 /*
@@ -28,7 +28,7 @@ frase:
 "O segundo elemento do segundo array é [ELEMENTO]."
 */
 
-console.log('O segundo elemento do array criado é ' + arr[6][1] )
+console.log('O segundo elemento do array criado é ' + arr[6][1] + '.' )
 //O segundo elemento do array criado é 5
 
 /*
