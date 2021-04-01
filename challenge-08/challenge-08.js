@@ -62,18 +62,72 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   - Se o operador não for válido, retornar a frase:
   "Operação inválida."
 */
-// ?
+
+function calculator(operator){
+    switch(operator){
+        case '+':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x + y) )
+            } 
+            break
+        case '-':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x - y) )
+            } 
+        case '*':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x * y) )
+            } 
+        case '/':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x / y) )
+            } 
+        case '%':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x % y) )
+            } 
+        default:
+            console.log( 'Operação inválida.' )        
+    }
 
 /*
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
 parâmetro o operador de soma.
 */
-// ?
+var sum = function calculator(operator){
+    switch(operator){
+        case '+':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x + y) )
+            } 
+            break
+        case '-':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x - y) )
+            } 
+        case '*':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x * y) )
+            } 
+        case '/':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x / y) )
+            } 
+        case '%':
+            return function(x,y){
+                console.log( 'Resultado da operação: ' + x + ' ' + operator + ' ' + y + ' = ' + (x % y) )
+            } 
+        default:
+            console.log( 'Operação inválida.' )        
+    }
+}
 
 /*
 Agora `sum` é uma função. Mostre no console a soma de dois números, usando ela.
 */
-// ?
+
+sum('*')(5,3)
+//Resultado da operação: 5 * 3 = 15
 
 /*
 Agora, declare algumas variáveis com os nomes `subtraction`, `multiplication`,
