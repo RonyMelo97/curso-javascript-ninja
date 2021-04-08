@@ -95,16 +95,12 @@
   - O retorno dessa segunda função deve ser a função de `callback` passada
   por parâmetro, INVOCADA, e passando a ela por parâmetro os dois valores
   que foram passadas para a primeira função `calculator`.
-  */
-  // ?
-  /*
-  function calculator(number1,number2){
-    return function(callback){
 
-    }
-    
+function calculator(number1,number2){
+    return function(callback){
+        return callback(number1,number2)
+    };
 }
-  */
 
   /*
   Declare uma variável chamada `sum`, e atribua a ela a função `calculator`,
