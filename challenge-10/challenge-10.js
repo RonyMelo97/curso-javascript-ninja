@@ -11,10 +11,10 @@
     resolver o problema corretamente.
     */
     
-    var five = 5;
+    var five = Number ('5');
     console.log( five + ' é número?', typeof five === 'number' );
 
-    var concat = '1010';
+    var concat = String(10) + String(10) ;
     console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
 
     /*
