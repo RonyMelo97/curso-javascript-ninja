@@ -23,6 +23,7 @@
     Crie uma variável chamada `brasil`, que irá receber as duas regiões
     concatenadas. Mostre o `brasil` no console.
     */
+    var Brasil = []
     console.log( '\nAlguns Estados do Brasil:' );
     
     console.log(Brasil.concat([sul,sudeste]))
@@ -34,12 +35,17 @@
     console.log( '\nMais estados adicionados:' );
     var norte = [ 'Pará', 'Rondônia', 'Roraima' ,'Tocantins']
     norte.unshift('Acre', 'Amapá', 'Amazonas')
+  
+    norte.forEach(function(estado){
+    Brasil.push(estado)
+    });
 
     /*
     Remova o primeiro estado do array `brasil` e mostre-o no console.
     */
     console.log( '\nEstado removido:' );
-    // ?
+    console.log(Brasil.shift())
+    //Acre
 
     /*
     Crie um novo array chamado `newSul`, que receba somente os estados do sul,
