@@ -205,7 +205,21 @@
     - "Ceará não foi incluído :("
     */
     console.log( '\nCeará está incluído em `brasil`?' );
-    // ?
+    
+    var cearaIncluded = Brasil.some(function(estado){
+        return estado === 'Ceará' 
+    });
+
+    var thereIsCeara = function(estado){
+        if(cearaIncluded){
+            return 'Ceará está incluído!'
+        }else{
+            return 'Ceará não foi incluído :('
+        }
+    }
+    
+    console.log(thereIsCeara())
+    //Ceará está incluído!
 
     /*
     Percorra o array `newBrasil` e crie um novo array que some 1 no ID de cada
