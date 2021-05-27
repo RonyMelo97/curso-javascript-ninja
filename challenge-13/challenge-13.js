@@ -98,7 +98,7 @@
     Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
     chamada `newSudeste`.
     */
-    var newSudeste = Brasil.splice(5,10)
+    var newSudeste = Brasil.splice( 5 )
 
     /*
     Adicione os estados do `nordeste` ao array `brasil`. Esses estados devem
@@ -149,7 +149,7 @@
   
     var newBrasil = []
     Brasil.forEach(function(estado, index){
-        newBrasil.push( {'id':index , 'estado':estado} ) 
+        newBrasil.push( {id:index , estado:estado} ) 
     })
 
     /*
@@ -227,23 +227,55 @@
     - "[ESTADO] pertence ao Brasil."
     Atribua o novo array a uma variável chamada `map`.
     */
-    // ?
+    var map = newBrasil.map(function(estado,index){
+        return { 
+            id: index + 1,
+            estado: estado.estado + ' Pertence ao Brasil'
+        };
+    });
 
     /*
     Mostre no console o array criado acima:
     */
     console.log( '\nnewBrasil agora com mais informações:' );
-    // ?
+    console.log(map)
+    
+    /*
+    { id: 1, estado: 'Amapá Pertence ao Brasil' },
+    { id: 2, estado: 'Amazonas Pertence ao Brasil' },
+    { id: 3, estado: 'Rio Grande do Sul Pertence ao Brasil' },
+    { id: 4, estado: 'Santa Catarina Pertence ao Brasil' },
+    { id: 5, estado: 'Paraná Pertence ao Brasil' },
+    { id: 6, estado: 'Maranhão Pertence ao Brasil' },
+    { id: 7, estado: 'Ceará Pertence ao Brasil' },
+    { id: 8, estado: 'Rio Grande do Norte Pertence ao Brasil' },
+    { id: 9, estado: 'Paraíba Pertence ao Brasil' },
+    { id: 10, estado: 'Pernambuco Pertence ao Brasil' },
+    { id: 11, estado: 'Alagoas Pertence ao Brasil' },
+    { id: 12, estado: 'Sergipe Pertence ao Brasil' },
+    { id: 13, estado: 'Bahia Pertence ao Brasil' }
+    */
 
     /*
     Filtre o array criado acima, retornando somente os estados que tiverem
     ID par. Atribua o valor à uma variável chamada `filter`.
     */
-    // ?
+    var filter = map.filter(function(estado){
+        return  estado.id % 2 === 0; 
+    });
+
 
     /*
     Mostre o array filtrado acima no console.
     */
     console.log( '\nEstados com ID par:' );
-    // ?
+    console.log(filter)
+    /*
+    { id: 2, estado: 'Amazonas Pertence ao Brasil' },
+    { id: 4, estado: 'Santa Catarina Pertence ao Brasil' },
+    { id: 6, estado: 'Maranhão Pertence ao Brasil' },
+    { id: 8, estado: 'Rio Grande do Norte Pertence ao Brasil' },
+    { id: 10, estado: 'Pernambuco Pertence ao Brasil' },
+    { id: 12, estado: 'Sergipe Pertence ao Brasil' }
+    */
   });
