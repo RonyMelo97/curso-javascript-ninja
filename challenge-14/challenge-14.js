@@ -31,7 +31,16 @@
   números do array criado acima. Mostre esse novo array no console.
   */
   console.log( '\nJust Numbers:' );
-  // ?
+  var justNumbers = []
+
+  numberObjects.map(function( item ){
+      return justNumbers.push(item.number)
+  })
+  console.log(numberObjects)
+  /*
+  1, 2, 3, 4,  5,
+  6, 7, 8, 9, 10
+  */
 
   /*
   Crie um novo array chamado `justMod2Or3`, que receberá do array criado acima
@@ -39,7 +48,16 @@
   no console.
   */
   console.log( '\nJust module of division by 2 or 3:' );
-  // ?
+  justNumbers.map(function( item ){
+      if ( item % 2 === 0 || item % 3 === 0 ){
+          return justMod2Or3.push(item)
+      }
+  });
+  console.log(justMod2Or3)
+  /*
+  2, 3,  4, 6,
+  8, 9, 10
+  */
 
   /*
   Declare uma variável chamada operation que receba, do array criado acima,
@@ -47,10 +65,15 @@
   - Somar 1 ao último valor retornado;
   - Multiplicar o resultado pelo valor atual.
   O cálculo deve começar com zero.
-  Mostre o resultado no console.
+  Mostre o resultado no console. 
   */
   console.log( '\nOperation:' );
-  // ?
+  var operation = justMod2Or3.reduce(function(acumulado,atual){
+      return (acumulado + 1) * atual
+  },0)
+  
+  console.log(operation)
+  //177940
 
   /*
   Faça o mesmo cálculo passado acima, mas começando do último item para o
